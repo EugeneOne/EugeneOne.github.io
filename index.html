@@ -13,6 +13,7 @@
 <meta property="og:title" content="Eugene">
 <meta property="og:url" content="http://yoursite.com/index.html">
 <meta property="og:site_name" content="Eugene">
+<meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Eugene">
   
@@ -144,6 +145,74 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-vue-analysis01" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/08/23/vue-analysis01/">vue-analysis01</a>
+    </h1>
+  
+
+        
+        <a href="/2017/08/23/vue-analysis01/" class="archive-article-date">
+  	<time datetime="2017-08-23T11:34:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-23</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/08/23/vue-analysis01/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+
+
+<!-- 目录内容 -->
+
+<!-- 目录内容结束 -->
+
+  
     <article id="post-2017-07-10-测试-md" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -164,7 +233,9 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p></p><h1>123</h1><p></p>
+<p></p><h3>321<p></p>
+</h3>
       
 
       
@@ -227,6 +298,12 @@
 
 
 
+
+
+<!-- 目录内容 -->
+
+<!-- 目录内容结束 -->
+
   
     <article id="post-electron1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -248,20 +325,43 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>[TOC]</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"># 安装依赖</div><div class="line">npm install （巨慢最好用cnpm）</div><div class="line">#启动本地服务器开发</div><div class="line">npm run dev</div><div class="line">#编译</div><div class="line">npm run pack</div><div class="line">#打包</div><div class="line">npm run build</div></pre></td></tr></table></figure>
-<p>github地址：<a href="https://github.com/EugeneOne/EMark" target="_blank" rel="external">https://github.com/EugeneOne/EMark</a></p>
-<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>第一篇博客就记录下最近Electron练手项目——Markdown编辑器。<br><br>因为用了很久的MOU不支持Sierra，再加上比较想学习下Electron，于是就有了这个项目</p>
+        <p>github地址：<a href="https://github.com/EugeneOne/EMark" target="_blank" rel="external">https://github.com/EugeneOne/EMark</a></p>
+<h2 id="Electron-vue写个Markdown编辑器"><a href="#Electron-vue写个Markdown编辑器" class="headerlink" title="Electron+vue写个Markdown编辑器"></a>Electron+vue写个Markdown编辑器</h2><p>记录下最近Electron练手项目——Markdown编辑器。<br><br>因为用了很久的MOU不支持Sierra，再加上最近在学习Electron，于是就有了这个项目（忽视随意的UI）</p>
+<h3 id="功能实现"><a href="#功能实现" class="headerlink" title="功能实现"></a>功能实现</h3><ul>
+<li>常用markdown功能</li>
+<li>markdown实时预览</li>
+<li>三种编辑模式</li>
+<li>支持快捷键</li>
+<li>支持文件拖拽，dock(mac)拖拽</li>
+<li>代码高亮</li>
+<li>文件保存、另存<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"># 安装依赖</div><div class="line">npm install （巨慢最好用cnpm）</div><div class="line">#启动本地服务器开发</div><div class="line">npm run dev</div><div class="line">#编译</div><div class="line">npm run pack</div><div class="line">#打包</div><div class="line">npm run build</div></pre></td></tr></table></figure>
+</li>
+</ul>
 <h2 id="技术栈"><a href="#技术栈" class="headerlink" title="技术栈"></a>技术栈</h2><ul>
 <li>VUE</li>
 <li>VUEX</li>
+<li>marked (markdown解析模块)</li>
+<li>highlight.js (代码高亮)</li>
 <li>vue-router</li>
 <li>Electron</li>
 <li>electron-vu</li>
 </ul>
-<p>整个项目用了vue的electron脚手架工具<a href="https://github.com/SimulatedGREG/electron-vue" target="_blank" rel="external">electron-vue</a>，用vuex管理所有数据状态，vue-router管理路由<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">npm install -g vue-cli</div><div class="line">vue init simulatedgreg/electron-vue my-project</div></pre></td></tr></table></figure></p>
-<h2 id="项目目录"><a href="#项目目录" class="headerlink" title="项目目录"></a>项目目录</h2><p>├── README.md<br>├── build<br>├── dist<br>├── node_modules<br>├── package.json<br>├── .electron-vue webpack及node配置<br>├── src<br>│   ├── icons<br>│   │   ├── icon.icns<br>│   │   └── icon.ico<br>│   ├── index.ejs<br>│   ├── main 主进程<br>│   │   ├── index.dev.js<br>│   │   └── index.js<br>│   ├── node_modules<br>│   ├── package.json<br>│   └── renderer 渲染进程<br>│       ├── App.vue<br>│       ├── assets<br>│       ├── components<br>│       ├── main.js<br>│       ├── router<br>│       └── store<br>└── static</p>
-<h2 id="简述Electron"><a href="#简述Electron" class="headerlink" title="简述Electron"></a>简述Electron</h2>
+<p>整个项目用了vue的electron脚手架工具<a href="https://github.com/SimulatedGREG/electron-vue" target="_blank" rel="external">electron-vue</a>，用vuex管理所有数据状态，vue-router管理路由。整个项目相当于把一个VUE项目放在渲染进程里<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">npm install -g vue-cli</div><div class="line">vue init simulatedgreg/electron-vue my-project</div></pre></td></tr></table></figure></p>
+<h2 id="项目目录"><a href="#项目目录" class="headerlink" title="项目目录"></a>项目目录</h2><p>├── README.md<br>├── build<br>├── dist<br>├── node_modules<br>├── package.json<br>├── .electron-vue webpack及node配置<br>├── src<br>│   ├── icons<br>│   │   ├── icon.icns<br>│   │   └── icon.ico<br>│   ├── index.ejs<br>│   ├── main (主进程)<br>│   │   ├── index.dev.js<br>│   │   └── index.js<br>│   ├── node_modules<br>│   ├── package.json<br>│   └── renderer (渲染进程)<br>│       ├── App.vue<br>│       ├── assets<br>│       ├── components<br>│       ├── main.js<br>│       ├── router<br>│       └── store<br>└── static</p>
+<h2 id="Electron部分"><a href="#Electron部分" class="headerlink" title="Electron部分"></a>Electron部分</h2><h3 id="官方简介"><a href="#官方简介" class="headerlink" title="官方简介"></a>官方简介</h3><blockquote>
+<p>Electron 可以让你使用纯 JavaScript 调用丰富的原生 APIs 来创造桌面应用。你可以把它看作是专注于桌面应用而不是 web 服务器的，io.js 的一个变体。<br>这不意味着 Electron 是绑定了 GUI 库的 JavaScript。相反，Electron 使用 web 页面作为它的 GUI，所以你能把它看作成一个被 JavaScript 控制的，精简版的 Chromium 浏览器。</p>
+</blockquote>
+<h3 id="主进程和渲染进程"><a href="#主进程和渲染进程" class="headerlink" title="主进程和渲染进程"></a>主进程和渲染进程</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install electron -g</div></pre></td></tr></table></figure>
+<p><img src="http://img.gsxservice.com/0xuexitoutiao/yunying/38837059_2fn9shvk.png" alt="Img"></p>
+<p>Electrom中main脚本的进程称为<strong>主进程</strong>，一个系统只能有一个主进程。但是可以有多个render(渲染进程)，electron中每个窗口都运行着自己的进程，称为<strong>渲染进程</strong>。</p>
+<p>主进程：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div></pre></td><td class="code"><pre><div class="line">import &#123; app, BrowserWindow, ipcMain, webContents &#125; from &apos;electron&apos;</div><div class="line"></div><div class="line">let mainWindow</div><div class="line"></div><div class="line">const winURL = process.env.NODE_ENV === &apos;development&apos;</div><div class="line">  ? `http://localhost:9080`</div><div class="line">  : `file://$&#123;__dirname&#125;/index.html`</div><div class="line"></div><div class="line">/**</div><div class="line">   * 创建窗口并初始化</div><div class="line">   */</div><div class="line">function createWindow() &#123;</div><div class="line">  mainWindow = new BrowserWindow(&#123;</div><div class="line">    height: 750,</div><div class="line">    useContentSize: true,</div><div class="line">    width: 1000</div><div class="line">  &#125;)</div><div class="line"></div><div class="line">  // 窗口关闭事件</div><div class="line">  mainWindow.on(&apos;closed&apos;, () =&gt; &#123;</div><div class="line">    mainWindow = null</div><div class="line">  &#125;)</div><div class="line">&#125;</div><div class="line"></div><div class="line">//  打开历史文件及拖拽文件到图标时触发</div><div class="line">//  通过webContents给渲染进程发出自定义事件&apos;newFile&apos;</div><div class="line">app.on(&apos;open-file&apos;, (event, path) =&gt; &#123;</div><div class="line">  mainWindow.webContents.send(&apos;newFile&apos;,path)</div><div class="line">&#125;)</div><div class="line"></div><div class="line">//  应用初始化结束后调用</div><div class="line">app.on(&apos;ready&apos;, createWindow)</div><div class="line"></div><div class="line">app.on(&apos;window-all-closed&apos;, () =&gt; &#123;</div><div class="line">  if (process.platform !== &apos;darwin&apos;) &#123;</div><div class="line">    app.quit()</div><div class="line">  &#125;</div><div class="line">&#125;)</div><div class="line"></div><div class="line">//  唤醒应用时触发</div><div class="line">app.on(&apos;activate&apos;, () =&gt; &#123;</div><div class="line">  //  没有窗口时初始化新窗口</div><div class="line">  if (mainWindow === null) &#123;</div><div class="line">    createWindow()</div><div class="line">  &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure></p>
+<h3 id="主进程和渲染进程之间的通信"><a href="#主进程和渲染进程之间的通信" class="headerlink" title="主进程和渲染进程之间的通信"></a>主进程和渲染进程之间的通信</h3><p>在 Electron，提供用于在主进程与渲染进程之间通讯的 <a href="https://www.w3cschool.cn/electronmanual/electronmanual-ipc-main.html" target="_blank" rel="external"> ipc</a> 和<a href="https://www.w3cschool.cn/electronmanual/electronmanual-ipc-renderer.html" target="_blank" rel="external">ipcRenderer</a>。还有一个渲染进程调用主进程模块的<a href="https://www.w3cschool.cn/electronmanual/electronmanual-remote.html" target="_blank" rel="external">remote</a>模块，使用 remote 模块，可以调用主进程对象的方法，而无需显式地发送进程间消息</p>
+<hr>
+<h2 id="VUE部分"><a href="#VUE部分" class="headerlink" title="VUE部分"></a>VUE部分</h2><p><strong>markdown功能实现：</strong></p>
+<p>引入marked解析，并通过vuex实现实时预览。同时引入highlight.js实现代码高亮</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">const marked = require(&apos;marked&apos;)</div><div class="line">const highlight = require(&apos;highlight.js&apos;)</div><div class="line"></div><div class="line">marked.setOptions(&#123;</div><div class="line">    highlight: function(code) &#123;</div><div class="line">        return require(&apos;highlight.js&apos;).highlightAuto(code).value;</div><div class="line">    &#125;</div><div class="line">&#125;)</div><div class="line"></div><div class="line">export default &#123;</div><div class="line">    toMd: state =&gt; &#123;</div><div class="line">        return marked(state.articleList.content)</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p><strong>实现文件拖拽读取：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">dragging(event) &#123;</div><div class="line">            let self = this;</div><div class="line">            let dt = event.dataTransfer;</div><div class="line">            let files = dt.files;</div><div class="line">            var path = files[0].path;</div><div class="line">            //console.log(&quot;path:&quot;, files)</div><div class="line">            //如果拖拽的文件不是本文件</div><div class="line">            if (self.filePath != path) &#123;</div><div class="line">                if (self.isNeedSave) &#123;</div><div class="line">                    this.$emit(&quot;dialogAndSave&quot;)</div><div class="line">                &#125;</div><div class="line">                let reader = new FileReader();</div><div class="line">                //  console.log(files,reader)</div><div class="line">                reader.readAsText(files[0], &apos;UTF-8&apos;);</div><div class="line">                reader.onload = function (e) &#123;</div><div class="line">                    let value = e.target.result;</div><div class="line">                    document.getElementById(&quot;inputArea&quot;).value = e.target.result;</div><div class="line">                    self.$store.dispatch(&apos;sertTxt&apos;, e.target.result)</div><div class="line">                &#125;</div><div class="line">                //console.log(&quot;path:&quot;, path)</div><div class="line">                self.$store.dispatch(&apos;filePath&apos;, path)</div><div class="line">            &#125;</div><div class="line">        &#125;</div></pre></td></tr></table></figure>
       
 
       
@@ -301,6 +401,12 @@
 
 
 
+
+
+
+<!-- 目录内容 -->
+
+<!-- 目录内容结束 -->
 
   
     <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
@@ -372,6 +478,12 @@
 
 
 
+
+
+
+<!-- 目录内容 -->
+
+<!-- 目录内容结束 -->
 
   
   

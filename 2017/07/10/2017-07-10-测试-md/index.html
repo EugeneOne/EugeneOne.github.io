@@ -8,14 +8,18 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>2017-07-10-测试.md | Eugene</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="keywords" content="test2">
+  <meta name="description" content="123 321">
+<meta name="keywords" content="test2">
 <meta property="og:type" content="article">
 <meta property="og:title" content="2017-07-10-测试.md">
 <meta property="og:url" content="http://yoursite.com/2017/07/10/2017-07-10-测试-md/index.html">
 <meta property="og:site_name" content="Eugene">
-<meta property="og:updated_time" content="2017-07-10T11:51:49.000Z">
+<meta property="og:description" content="123 321">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-08-08T03:36:59.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2017-07-10-测试.md">
+<meta name="twitter:description" content="123 321">
   
     <link rel="alternative" href="/atom.xml" title="Eugene" type="application/atom+xml">
   
@@ -163,7 +167,9 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p></p><h1>123</h1><p></p>
+<p></p><h3>321<p></p>
+</h3>
       
 
       
@@ -257,6 +263,15 @@
   
 <nav id="article-nav">
   
+    <a href="/2017/08/23/vue-analysis01/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          vue-analysis01
+        
+      </div>
+    </a>
+  
   
     <a href="/2017/07/03/electron1/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">Electron+VUE开发Markdown编辑器（1）</div>
@@ -279,6 +294,20 @@
         </div>
         
         
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">1.</span> <span class="toc-text">123</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">1.0.1.</span> <span class="toc-text">321
+</span></a></li></ol></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
     </div>
 </aside>
 
@@ -292,6 +321,37 @@
 
   
 
+
+
+
+<!-- 目录内容 -->
+
+    <p class="show-toc-btn" id="show-toc-btn" onclick="showToc();" style="display:none">
+          <span class="btn-bg"></span>
+          <span class="btn-text">文章导航</span>
+          </p>
+	<div id="toc-article" class="toc-article">
+	    <span id="toc-close" class="toc-close" title="隐藏导航" onclick="showBtn();">×</span>
+		<strong class="toc-title">文章目录</strong>
+           <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">1.</span> <span class="toc-text">123</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">1.0.1.</span> <span class="toc-text">321
+</span></a></li></ol></li></ol></li></ol>
+         </div>
+   <script type="text/javascript">
+	function showToc(){
+		var toc_article = document.getElementById("toc-article");
+		var show_toc_btn = document.getElementById("show-toc-btn");
+		toc_article.setAttribute("style","display:block");
+		show_toc_btn.setAttribute("style","display:none");
+		};
+	function showBtn(){
+		var toc_article = document.getElementById("toc-article");
+		var show_toc_btn = document.getElementById("show-toc-btn");
+		toc_article.setAttribute("style","display:none");
+		show_toc_btn.setAttribute("style","display:block");
+		};
+   </script>
+      
+<!-- 目录内容结束 -->
 
           </div>
         </div>
